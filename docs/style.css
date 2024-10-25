@@ -1,0 +1,13 @@
+body {
+    background-color: #f0f2f5;
+    color: #333;
+}
+.section-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+.project-card {
+    margin-bottom: 30px;
+}
