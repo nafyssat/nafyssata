@@ -3,47 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - En construction</title>
-    <!-- Bootstrap CSS -->
+    <title>Accueil - Mon Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Styles personnalisés */
-        body {
-            background-color: #f8f9fa;
-            text-align: center;
-            padding-top: 20%;
-        }
-        .construction-text {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .hammer-emoji {
-            font-size: 4rem;
-            display: inline-block;
-            animation: hammer-animation 1s infinite;
-        }
-        @keyframes hammer-animation {
-            0% { transform: rotate(0deg); }
-            25% { transform: rotate(-20deg); }
-            50% { transform: rotate(0deg); }
-            75% { transform: rotate(20deg); }
-            100% { transform: rotate(0deg); }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="hammer-emoji">🔨</div>
-                <div class="construction-text">Site en cours de construction</div>
-            </div>
+    <!-- Inclusion de la barre de navigation -->
+    <div id="navbar-container"></div>
+
+    <!-- Header de la page d'accueil -->
+    <header class="header-section">
+        <div class="container">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Découvrez mes projets et compétences en développement web.</p>
         </div>
-    </div>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </header>
+
+    <script>
+        // Charger le fichier navbar.html
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
+
