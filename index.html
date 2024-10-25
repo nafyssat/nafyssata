@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Mon Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="docs/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Inclusion de la barre de navigation -->
@@ -15,13 +15,13 @@
     <header class="header-section">
         <div class="container">
             <h1>Bienvenue sur mon Portfolio</h1>
-            <p>Découvrez mes projets et compétences en BIG DATA.</p>
+            <p>Découvrez mes projets et compétences en développement web.</p>
         </div>
     </header>
 
     <script>
         // Charger le fichier navbar.html
-        fetch('docs/navbar.html')
+        fetch('navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-container').innerHTML = data;
@@ -29,4 +29,3 @@
     </script>
 </body>
 </html>
-
